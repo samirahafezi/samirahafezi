@@ -26,7 +26,8 @@
 		<li data-menuanchor="firstPage"><a href="#firstPage">Top</a></li>
 		<li data-menuanchor="secondPage"><a href="#secondPage">Developer</a></li>
 		<li data-menuanchor="3rdPage"><a href="#3rdPage">Photographer</a></li>
-		<li data-menuanchor="4thpage"><a href="#4thpage">Contact</a></li>
+		<li data-menuanchor="4thpage"><a href="#4thpage">Percussionist</a></li>
+		<li data-menuanchor="5thpage"><a href="#5thpage">Contact</a></li>
 	</ul>
 </div>
 
@@ -35,11 +36,11 @@
 	<div class="section " id="section0">
 		<div class="section0Developer click animated">
 			<h1>Developer</h1>
-			<a href="#secondPage"><i class="fa fa-arrow-up"></i></a>
+			<a href="#secondPage"><i class="fa fa-arrow-up header_i"></i></a>
 		</div>
 		<div class="section0Photographer clickPhoto animated">
 			<h1>Photographer</h1>
-			<a href="#3rdPage"><i class="fa fa-arrow-up"></i></a>
+			<a href="#3rdPage"><i class="fa fa-arrow-up  header_i"></i></a>
 		</div>
 	</div>
 
@@ -47,7 +48,7 @@
 
 	    <div class="slide">
 			<div class="intro">
-				<h1><i class="fa fa-terminal fa-2x"></i>Full-Stack Developer</h1>
+				<h1><i class="fa fa-terminal"></i>Full-Stack Developer</h1>
 				<p>Architect and developer with over 10 years of experience in the e-commerce industry.  Extensive experience with payment gateways, integration between systems, building and maintaining multi million dollar revenue websites.  Part of the core team that built Shop.ca from the ground up.  Designed and built custom schema from scratch.  Languages:  Java, JavaScript, HTML, CSS, SQL and others.</p>
 			</div>
 		</div>
@@ -71,7 +72,7 @@
 	<div class="section" id="section2">
 	    <div class="slide">
 			<div class="intro">
-				<h1>Bio</h1>
+				<h1><i class="fa fa-camera-retro"></i>Photographer Bio</h1>
 				<p>Freelance photographer since 2007, me and my trusty Nikon D300 have captured many beautiful images together.  Throughout the years I've dabbled in wedding photography, studio shoots with dancers and models, martial arts shoots, babies, pets and travel photography.  My real passion however, lies in the field of dance photography and capturing movement in a photo.</p>
 
 				<p>Feel free to scroll right and take a look at some of my favorite photos that I've captured over the years and contact me if you have a project in mind that I would be perfect for.
@@ -134,17 +135,40 @@
 		</div>
 	</div>
 
-
 	<div class="section" id="section3">
+	    <div class="slide">
+			<div class="intro">
+				<h1><i class="fa fa-music"></i>Percussion Bio</h1>
+				<p>An avid percussionist since 2006, I've had the pleasure of learning from some of the best artists in the world.</p>
+				<p>Grew up playing the piano and violin blah blah blah</p>
+			</div>
+		</div>
+	    <div class="slide">
+			<h1>Fleck Dance Theater</h1>
+			<p>Performing with the Arabesque Dance Company at Fleck Dance Theater</p>
+			<img src="images/image1.jpg" alt="">
+		</div>
+		<div class="slide">
+			<h1>Canadian Opera Company</h1>
+			<p>Performing with the Sarghi Ensemble at Fleck Dance Theater</p>
+			<img src="images/image1.jpg" alt="">
+		</div>
+		<div class="intro">
+			<h1>Places I've performed at</h1>
+			<p>Here's a list of places I've performed</p>
+		</div>
+	</div>
+
+	<div class="section" id="section4">
 		<div class="intro">
 			<h1>Find me online!</h1>
-			<p>Here are some places you can find my work online.</p>
+			<p>Here are some places you can find me online.</p>
 
 			<div class="boxWrapper">
 				<div class="box">
-					<a href="http://www.sh-photography.com" class="h3link" target="_blank">
-						<i class="fa fa-camera-retro footer_i"></i>
-						<h3>My flash site!</h3>
+					<a href="http://twitter.com/samikazeto" class="h3link" target="_blank">
+						<i class="fa fa-twitter footer_i"></i>
+						<h3>Twitter</h3>
 					</a>
 				</div>
 				<div class="box">
@@ -160,12 +184,10 @@
 					</a>
 				</div>
 			</div>
+
+			<p>&copy; Samira Hafezi 2015</p>
 		</div>
 	</div>
-	<div class="footer section">
-		<p>&copy; Samira Hafezi 2015</p>
-	</div>
-
 </div>
 
 
@@ -178,8 +200,8 @@
 <script type="text/javascript">
 	$(document).ready(function() {
 		$('#fullpage').fullpage({
-			sectionsColor: ['#c0392b', '#95a5a6', '#B22222', '#A9A9A9', '#971616'],
-			anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+			sectionsColor: ['#c0392b', '#95a5a6', '#B22222', '#A9A9A9', '#c0392b', '#971616'],
+			anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', '5thpage', 'lastPage'],
 			menu: '#menu',
 			scrollingSpeed: 1000
 		});
@@ -189,10 +211,8 @@
 <script>
 	$(function() {
 		$('.galleryContainer').flickity({
-			wrapAround: true,
-			freeScroll: true
-			// autoPlay: true,
-			// autoPlay: 5000
+			freeScroll: true,
+			contain: true
 		});
 	});
 </script>

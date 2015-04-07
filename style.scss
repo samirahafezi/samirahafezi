@@ -84,6 +84,7 @@ p{
 .section{
 	text-align:center;
 }
+
 #menu li {
 	display:inline-block;
 	margin: 10px;
@@ -152,11 +153,11 @@ p{
 #section2 img{
 	margin: 20px 0 0 52px;
 }
-#section3 img{
-	bottom: 0px;
-	position: absolute;
-	margin-left: -420px;
-}
+// #section3 img{
+// 	bottom: 0px;
+// 	position: absolute;
+// 	margin-left: -420px;
+// }
 .intro p{
 	width: 50%;
 	margin: 0 auto;
@@ -191,20 +192,24 @@ p{
 
 }
 
-i {
+i.header_i {
 	font-size: 50px;
 	padding: 30px;
 	color: $fontColor;
 	transition: all 0.5s;
 }
 
-i:hover {
+i.header_i:hover {
 	-webkit-transform:rotate(180deg);
 }
 
 i.footer_i {
 	font-size: 100px;
-	color: red;
+	color: black;
+	transition: none;
+}
+i.footer_i:hover {
+	-webkit-transform:none;
 }
 
 a {
@@ -217,9 +222,9 @@ p {
 }
 
 .galleryContainer {
-	width: 800px;
+	width: 1200px;
 	margin: 0 auto;
-	border: 2px solid $fontColor;
+	// border: 2px solid $fontColor;
 }
 
 .boxWrapper {
@@ -244,3 +249,4 @@ p {
 	text-align: center;
 	height: 10px;
 }
+ 
